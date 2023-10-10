@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Job Listings</h1>
+       
+        <div class="search-box">
+            <label for="searchInput">Search:</label>
+            <input type="text" id="searchInput" placeholder="Search by job title...">
+        </div>
+    </header>
+
+    <main>
+        <div class="job-listings">
+           
+            <div class="job" data-role="frontend" data-level="junior" data-languages="javascript" data-tools="react">
+                <div class="job-image">
+                  <img src="images.jpg" alt="Frontend Icon">
+                </div>
+                <div class="job-details">
+                  <h2>Frontend Developer</h2>
+                  <p class="job-level">Junior Level</p>
+                  <p class="job-info">JavaScript, React</p>
+                </div>
+                <button class="delete-button">Delete</button>
+              </div>
+              
+         
+        </div>
+
+     
+        <div class="popup">
+            <div class="popup-content">
+                <h2>Job Details</h2>
+                <p>Title: <span class="job-title">Frontend Developer</span></p>
+                <p>Level: <span class="job-level">Junior</span></p>
+                <p>Languages: <span class="job-languages">JavaScript</span></p>
+                <p>Tools: <span class="job-tools">React</span></p>
+               
+                <button class="close-button">Close</button>
+            </div>
+        </div>
+
+     
+        <div class="modal" id="addJobModal">
+            <div class="modal-content">
+                <h2>Add a New Job</h2>
+                <form id="addJobForm">
+                    <label for="jobTitleInput">Job Title:</label>
+                    <input type="text" id="jobTitleInput" name="jobTitle" required>
+                    <label for="jobLevelInput">Job Level:</label>
+                    <input type="text" id="jobLevelInput" name="jobLevel" required>
+                    <label for="jobLanguagesInput">Languages:</label>
+                    <input type="text" id="jobLanguagesInput" name="jobLanguages" required>
+                    <label for="jobToolsInput">Tools:</label>
+                    <input type="text" id="jobToolsInput" name="jobTools" required>
+
+                  
+                    <button type="submit">Add</button>
+                </form>
+                <button class="close-button">Close</button>
+            </div>
+        </div>
+        
+      
+        <div class="add-button-container">
+            <button id="addJobButton">Add</button>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
